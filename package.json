@@ -4,6 +4,8 @@
   "description": "no",
   "main": "index.js",
   "scripts": {
+    "cypress": "npx cypress open",
+    "tsc:w": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,6 +15,12 @@
   "author": "Alexandra",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.1.0"
+    "@types/jest": "^28.1.2",
+    "cypress": "^10.1.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@types/jquery": "^2.0.47",
+    "jquery": "^3.6.0"
   }
 }
