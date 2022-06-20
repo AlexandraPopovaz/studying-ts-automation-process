@@ -1,10 +1,10 @@
 {
   "name": "studying-ts-automation-process",
   "version": "1.0.0",
-  "description": "no",
+  "description": "try to create all staff from scratch",
   "main": "index.js",
   "scripts": {
-    "cypress": "npx cypress open",
+    "cy:open": "npx cypress open",
     "tsc:w": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
