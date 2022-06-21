@@ -17,7 +17,7 @@
 - Run **npm run cy:open** (Cypress window will be open)
 
 **How to create a new test**
-- Run **git branch <branchName>** -> **git checkout <branchName>** (a new branch will be created and you will be switched on it)
+- Run **git checkout -b branch_name** (a new branch will be created and you will be switched on it)
 - Run **npm run cy:open** (Cypress window will be open)
 - Create a new spec.file in the "e2e" folder
 - Write "yourTest.cy.js" test inside the new spec.file
