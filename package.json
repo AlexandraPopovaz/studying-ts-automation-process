@@ -10,7 +10,8 @@
     "eslint": "eslint . --fix",
     "prettier": "npx prettier --write",
     "precommit": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "npx eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,6 @@
   "author": "Alexandra",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^28.1.2",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
     "cypress": "^10.1.0",
@@ -32,7 +32,5 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@types/jquery": "^2.0.47",
-    "jquery": "^3.6.0"
   }
 }
