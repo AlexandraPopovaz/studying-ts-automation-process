@@ -8,10 +8,13 @@
     "tsc:w": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint . --fix",
-    "prettier": "npx prettier --write",
-    "precommit": "lint-staged",
-    "prepare": "husky install",
-    "lint-staged": "npx eslint --fix"
+    "prepare": "husky install"
+  },
+  "lint-staged":{
+    "**/*.{js,jsx,ts,tsx}":[
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
   },
   "repository": {
     "type": "git",
