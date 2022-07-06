@@ -6,14 +6,13 @@
   "scripts": {
     "cy:open": "npx cypress open",
     "tsc:w": "tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint . --fix",
+    "lint": "eslint ./cypress/e2e",
     "prepare": "husky install"
   },
-  "lint-staged":{
-    "**/*.{js,jsx,ts,tsx}":[
-      "npx prettier --write",
-      "npx eslint --fix"
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npm run lint",
+      "npx prettier"
     ]
   },
   "repository": {
@@ -33,7 +32,5 @@
     "lint-staged": "^13.0.2",
     "prettier": "2.7.1",
     "typescript": "^4.7.4"
-  },
-  "dependencies": {
   }
 }
