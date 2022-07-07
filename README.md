@@ -11,7 +11,7 @@
 ### How to run the project
 
 1. Cloned [the repository from Github](https://github.com/AlexandraPopovaz/studying-ts-automation-process.git)
-2. Install dependencies: run `npm install cypress`
+2. Install dependencies: run `npm install`
 3. Open Cypress: run `npm run cy:open`
 
 ### How to create a new test
