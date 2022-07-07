@@ -1,10 +1,19 @@
 {
   "name": "studying-ts-automation-process",
   "version": "1.0.0",
-  "description": "no",
+  "description": "try to create all staff from scratch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "npx cypress open",
+    "tsc:w": "tsc -w",
+    "lint": "eslint ./cypress/e2e",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npm run lint",
+      "npx prettier"
+    ]
   },
   "repository": {
     "type": "git",
@@ -13,6 +22,15 @@
   "author": "Alexandra",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.1.0"
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "cypress": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.2",
+    "prettier": "2.7.1",
+    "typescript": "^4.7.4"
   }
 }
